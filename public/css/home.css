@@ -1,0 +1,271 @@
+.home .register {
+    font-family: 'Roboto';
+
+}
+
+/* header */
+
+.home__header,
+.register__header {
+    background-color: var(--colorFondoHead);
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.home__header__logoDetail,
+.register__header__logoDetail {
+    width: 47%;
+}
+
+.home__header__barra,
+.register__header__barra {
+    width: 47%;
+    outline: none;
+    margin: auto;
+    margin-top: 10px;
+}
+
+.home__header__burger,
+.register__header__burger {
+    display: flex;
+    text-align: center;
+    margin: auto;
+    margin-top: 10px;
+    padding: 5px;
+    background-color: var(--colorFondoMenu);
+    color: var(--colorParrafoFooter);
+
+}
+
+.home__header section,
+.register__header section {
+    margin: 9px;
+
+}
+
+.home__header__banner img,
+.register__header__banner img {
+    /*  display: none; */
+    display: flex;
+    width: 98%;
+    margin: 20px auto;
+    text-align: center;
+    padding-top: 15px 0;
+
+}
+
+.home__header h2,
+.register__header h2 {
+    color: var(--colorSubtituloFooter);
+    font-size: var(--textoTitulo);
+}
+
+.home__header__section,
+.register__header__section {
+    display: none;
+}
+
+.home__header__section__nav,
+.register__header__section__nav {
+    margin-bottom: 15px;
+}
+
+.home__header__section__nav li,
+.register__header__section__nav li {
+    list-style-type: none;
+    margin-bottom: 2px;
+
+}
+
+/* main */
+.home__main {
+    background-color: rgb(235, 235, 235);
+}
+
+.home__main__section {
+    align-content: center;
+
+}
+
+.home__main__section article {
+    width: 300px;
+    margin: 15px;
+    border-top: 1px solid #ebebeb;
+    padding: 15px;
+    box-shadow: 0px 0px 10px rgb (100, 100, 100);
+
+}
+
+.home__main__section div img {
+    width: 100%;
+
+}
+
+.home__main__description {
+    position: relative;
+    margin: auto;
+}
+
+.home__main__description i {
+    color: var(--colorVerde);
+    display: block;
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #39b54a;
+    background-color: #FFF;
+    border-radius: 50%;
+    position: absolute;
+    right: 20px;
+    top: 0px;
+
+}
+
+
+/* footer */
+
+.home__footer {
+    padding-top: 10px;
+
+}
+
+.home__footer {
+    display: flex;
+}
+
+.home__footer section {
+    text-align: center;
+    padding: 10px;
+    margin: 10px;
+
+}
+
+.home__footer h4 {
+    text-align: center;
+    color: var(--colorSubtituloFooter);
+}
+
+.home__footer p {
+    text-align: center;
+    color: #a3a2a2;
+    font-size: 12px;
+    margin: 5px;
+}
+
+
+.home__footer__card {
+    font-size: 30px;
+    text-align: center;
+    color: #1259c3;
+    margin: auto;
+
+}
+
+.home__footer__gift {
+    font-size: 30px;
+    text-align: center;
+    color: #1259c3;
+    margin: auto;
+}
+
+.home__footer__shield {
+    font-size: 30px;
+
+    text-align: center;
+    color: #1259c3;
+    margin: auto;
+}
+
+@media (min-width: 768px) {
+
+    /* header */
+    .home__header__barra {
+        margin: auto;
+        padding: 35px;
+        height: 20px;
+
+    }
+
+    .home__header__dolar {
+        justify-content: center;
+    }
+
+    .home__header__burger {
+        display: none;
+
+    }
+
+    .home__header__section {
+        display: flex;
+        gap: 16px;
+    }
+
+    .home__header__section__nav {
+        display: flex;
+        padding: 5px 35px;
+        margin: auto;
+
+    }
+
+    .home__header__section__nav ul {
+        display: flex;
+        gap: 5px;
+
+    }
+
+    .home__header__section a {
+        text-decoration: none;
+        gap: 10px;
+
+    }
+
+    /* main */
+
+    .home__main {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .home__main__section h4 {
+        display: inline-block;
+        /* margin-top: 10px; */
+    }
+
+    /* footer */
+
+    .home__footer h4 {
+        font-size: 23px;
+
+    }
+
+    .home__footer p {
+        display: contents;
+        font-size: 18px;
+        margin: 5px;
+    }
+}
+
+
+@media (min-width: 1024px) {
+
+    /* herader */
+    .home__header__section a {
+        gap: 10px;
+        margin: 10px;
+
+    }
+
+    /* main */
+    .home__main__section {
+        width: 250px;
+        gap: 5px;
+
+    }
+
+    .home__main__section article {
+        width: 90%;
+    }
+}
