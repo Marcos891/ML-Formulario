@@ -13,7 +13,7 @@
 <body class="register">
     <header class="register__header">
 
-        <div class="register__header__logoDetail">
+        <div class="register__header__logoDetail ">
             <a href="/"><img src="/img/logo-mercado-liebre.svg" alt="logo"></a>
         </div>
 
@@ -48,11 +48,45 @@
             </nav>
         </section>
 
-        <div class="register__header__banner"><img src="/img/img-home-banner.jpg" alt="">
-        </div>
-
-        <div>
-            <h2>Basado en tu ultima visita</h2>
+        <div 
+            class="register__header__banner"><img src="/img/img-home-banner.jpg" alt="">
         </div>
 
     </header>
+
+    <main>
+
+        <form action="/crearCuenta" method="post">
+            <div>
+                <label for="name">nombre y apellido:</label>
+                <input type="text" id="name" name="name">
+            </div>
+
+            <div>
+                <label for="user">nombre de usuario:</label>
+                <input type="text" id="user" name="user">
+            </div>
+
+            <div>
+                <label for="nacimiento">nacimiento:</label>
+                <input type="date" id="nacimiento name="nacimiento">
+            </div>
+
+            <div>
+                <label for="domicilio">domicilio:</label>
+                <input type="number" id="domicilio" name="domicilio">
+            </div>
+            
+            <div>
+                <select name="Categoria" id="Categoria">
+                    <option value="" hidden selected>Elige tu producto</option>
+                    <option value="electro">Electro</option>
+                    <option value="moda">Moda</option>
+                    <option value="hogar">Hogar</option>
+                    <option value="jugueteria">Jugueteria</option>
+                    <option value="vida sana">Vida sana</option>
+                </select>
+            </div>
+            
+        </form>
+    </main>

@@ -10,6 +10,8 @@
     background-color: var(--colorFondoHead);
     display: flex;
     flex-wrap: wrap;
+    overflow: hidden;
+
 
 }
 
@@ -24,6 +26,8 @@
     outline: none;
     margin: auto;
     margin-top: 10px;
+    overflow: hidden;
+
 }
 
 .home__header__burger,
@@ -41,6 +45,7 @@
 .home__header section,
 .register__header section {
     margin: 9px;
+    
 
 }
 
@@ -52,6 +57,8 @@
     margin: 20px auto;
     text-align: center;
     padding-top: 15px 0;
+    overflow: hidden;
+
 
 }
 
@@ -81,6 +88,7 @@
 /* main */
 .home__main {
     background-color: rgb(235, 235, 235);
+    padding: 10px;
 }
 
 .home__main__section {
@@ -181,41 +189,41 @@
 @media (min-width: 768px) {
 
     /* header */
-    .home__header__barra {
+    .home__header__barra, .register__header__barra {
         margin: auto;
         padding: 35px;
         height: 20px;
 
     }
 
-    .home__header__dolar {
+    .home__header__dolar, .register__header__dolar {
         justify-content: center;
     }
 
-    .home__header__burger {
+    .home__header__burger, .register__header__burger {
         display: none;
 
     }
 
-    .home__header__section {
+    .home__header__section, .register__header__section {
         display: flex;
         gap: 16px;
     }
 
-    .home__header__section__nav {
+    .home__header__section__nav, .register__header__section__nav {
         display: flex;
         padding: 5px 35px;
         margin: auto;
 
     }
 
-    .home__header__section__nav ul {
+    .home__header__section__nav ul, .register__header__section__nav ul {
         display: flex;
         gap: 5px;
 
     }
 
-    .home__header__section a {
+    .home__header__section a, .register__header__section a {
         text-decoration: none;
         gap: 10px;
 
